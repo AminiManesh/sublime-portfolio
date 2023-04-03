@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/all.min.js"></script>
+</head>
+
+<body id="body">
+    <header class="header w-100" id="header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg p-3 px-sm-4 py-sm-4 d-flex justify-content-between w-100" id="navbar">
+            <div class="container-fluid" style="background: var(--mainWhite);">
+                <!-- logo -->
+                <a class="navbar-brand text-capitalize fw-bolder me-sm-4" href="index.html" id="logo">sublime.</a>
+                <!-- navbar inline links -->
+                <div class="nav-items d-none d-lg-block" id="navCollapse">
+                    <ul class="mx-auto">
+                        <li class="nav-item d-lg-inline-block mx-4 active">
+                            <div class="navbar-dropdown">
+                                <a class="navbar-link navbar-dropdown-button gray-black-link text-capitalize active"
+                                    href="index.html">home</a>
+                                <div class="navbar-dropdown-menu">
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="product.html">Product</a>
+                                    <a class="dropdown-item gray-black-link" href="cart.html">Cart</a>
+                                    <a class="dropdown-item gray-black-link" href="checkout.html">Check out</a>
+                                    <a class="dropdown-item gray-black-link" href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <div class="navbar-dropdown">
+                                <a class="navbar-link navbar-dropdown-button gray-black-link text-capitalize"
+                                    href="categories.html">categories</a>
+                                <div class="navbar-dropdown-menu">
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="#">accessories</a>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="#">offers</a>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-extras d-flex">
+                    <!-- navbar shopping cart -->
+                    <div class="navbar-cart me-4">
+                        <a class="navbar-cart-link black-red-link d-flex align-items-center" href="cart.html">
+                            <i class="fas fa-shopping-bag navbar-cart-icon d-inline-block me-2"></i>
+                            <div class="navbar-cart-text">
+                                Cart
+                                <span class="navbar-cart-qty"> (0)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- navbar hamburger for openning side navigation -->
+                    <button class="navbar-hamburger collapsed d-lg-none" id="navbar-hamburger"
+                        onclick="openSidenav('open')">
+                        <span class="navbar-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <!-- navbar search button -->
+                    <button class="search-button d-none d-lg-inline-block black-red-link" id="search-button"
+                        onclick="openSearchBar()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- side navigation -->
+        <nav class="sidenav py-4 text-end" id="sidenav">
+            <div class="container-fluid px-4">
+                <!-- side navigation close button -->
+                <div class="d-block w-100 text-start">
+                    <button class="sidenav-close mb-4" onclick="openSidenav('close')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="mx-auto">
+                    <li class="nav-item sidenav-item">
+                        <div class="sidenav-dropdown">
+                            <a class="nav-link sidenav-dropdown-button black-blue-link text-capitalize py-3">home
+                                <i class="fas fa-chevron-down nav-link-icon"></i>
+                            </a>
+                            <div class="sidenav-dropdown-menu">
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">Categories</a>
+                                <a class="dropdown-item black-blue-link py-3" href="product.html">Product</a>
+                                <a class="dropdown-item black-blue-link py-3" href="cart.html">Cart</a>
+                                <a class="dropdown-item black-blue-link py-3" href="checkout.html">Check out</a>
+                                <a class="dropdown-item black-blue-link py-3" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <div class="sidenav-dropdown">
+                            <a class="nav-link sidenav-dropdown-button black-blue-link text-capitalize py-3">categories
+                                <i class="fas fa-chevron-down nav-link-icon"></i>
+                            </a>
+                            <div class="sidenav-dropdown-menu">
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="#">accessories</a>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="#">offers</a>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- search panel -->
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <div class="row justify-content-end px-2 py-3">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                        <input class="search-input form-control rounded-1 px-4 py-2" type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <section class="landing">
+            <div class="container-fluid short-landing-container">
+                <div class="landing-background"></div>
+                <section class="short-landing-content">
+                    <div class="container">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a class="white-red-link" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <main class="col-12 col-lg-8">
+                        <section class="contact-heading mb-5">
+                            <h4 class="mb-1 fw-semibold">Get in Touch</h4>
+                            <p class="text-secondary">Say hello</p>
+                        </section>
+                        <form class="contact-form">
+                            <div class="row p-0">
+                                <div class="col col-12 col-xl-6">
+                                    <div class="mb-3">
+                                        <label for="txtFirstName" class="form-label text-secondary">First Name*</label>
+                                        <input type="text" class="sublime-input-text form-control" id="txtFirstName"
+                                            title="Please fill out this field." required>
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-xl-6">
+                                    <div class="mb-3">
+                                        <label for="txtLastName" class="form-label text-secondary">Last Name*</label>
+                                        <input type="text" class="sublime-input-text form-control" id="txtLastName"
+                                            title="Please fill out this field." required>
+                                    </div>
+                                </div>
+                                <div class="col col-12 mb-3">
+                                    <label for="txtSubject" class="form-label text-secondary">Subject</label>
+                                    <input type="text" class="sublime-input-text form-control" id="txtSubject">
+                                </div>
+                                <div class="col col-12 mb-4">
+                                    <label for="txtMessage" class="form-label mb-2 text-secondary">Message*</label>
+                                    <textarea class="sublime-textarea form-control" id="txtMessage" rows="8"
+                                        title="Please fill out this field." required></textarea>
+                                </div>
+                                <div class="col col-12">
+                                    <button type="submit" class="sublime-btn sublime-btn-black my-2"><span>Send
+                                            Message</span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </main>
+                    <aside class="col-12 offset-xl-1 col-lg-3 mt-5 mt-lg-0">
+                        <div class="contact-info">
+                            <h5>Marketing</h5>
+                            <ul>
+                                <li>Phone: <span class="text-secondary">+53 345 7953 3245</span></li>
+                                <li>Email: <span class="text-secondary">yourmail@gmail.com</span></li>
+                            </ul>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Shippiing & Returns</h5>
+                            <ul>
+                                <li>Phone: <span class="text-secondary">+53 345 7953 3245</span></li>
+                                <li>Email: <span class="text-secondary">yourmail@gmail.com</span></li>
+                            </ul>
+                        </div>
+                        <div class="contact-info">
+                            <h5>Information</h5>
+                            <ul>
+                                <li>Phone: <span class="text-secondary">+53 345 7953 3245</span></li>
+                                <li>Email: <span class="text-secondary">yourmail@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="container">
+                <div class="googleMap w-100" id="googleMap">
+                    <iframe class=""
+                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d826.0763587797558!2d49.70168482918048!3d34.087315109469536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDA1JzE0LjMiTiA0OcKwNDInMDguMCJF!5e0!3m2!1sen!2snl!4v1679313185069!5m2!1sen!2snl"
+                        style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer-overlay"></div>
+    <footer class="footer" id="footer">
+        <div class="footer-background"></div>
+        <div class="container">
+            <div class="row py-4 py-lg-5">
+                <div class="col">
+                    <div
+                        class="footer-content text-center d-flex flex-column justify-content-between align-items-center flex-lg-row">
+                        <a class="footer-logo text-capitalize fw-bolder" href="#" id="footer-logo">sublime.</a>
+                        <p class="footer-copyright sublime-subtitle my-2 m-lg-0">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made by <a href="https://colorlib.com/">Colorlib</a><br>
+                            and reworked by <a href="https://aminimanesh.com/">Amin</a>
+                        </p>
+                        <ul class="footer-socials d-flex justify-content-between mt-2">
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

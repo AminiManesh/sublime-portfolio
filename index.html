@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sublime</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/frame.css">
+    <link rel="stylesheet" href="css/shared.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/all.min.js"></script>
+</head>
+
+<body id="body">
+    <header class="header w-100" id="header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg p-3 px-sm-4 py-sm-4 d-flex justify-content-between w-100" id="navbar">
+            <div class="container-fluid" style="background: var(--mainWhite);">
+                <!-- logo -->
+                <a class="navbar-brand text-capitalize fw-bolder me-sm-4" href="index.html" id="logo">sublime.</a>
+                <!-- navbar inline links -->
+                <div class="nav-items d-none d-lg-block" id="navCollapse">
+                    <ul class="mx-auto">
+                        <li class="nav-item d-lg-inline-block mx-4 active">
+                            <div class="navbar-dropdown">
+                                <a class="navbar-link navbar-dropdown-button gray-black-link text-capitalize active"
+                                    href="index.html">home</a>
+                                <div class="navbar-dropdown-menu">
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="product.html">Product</a>
+                                    <a class="dropdown-item gray-black-link" href="cart.html">Cart</a>
+                                    <a class="dropdown-item gray-black-link" href="checkout.html">Check out</a>
+                                    <a class="dropdown-item gray-black-link" href="contact.html">Contact</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <div class="navbar-dropdown">
+                                <a class="navbar-link navbar-dropdown-button gray-black-link text-capitalize"
+                                    href="categories.html">categories</a>
+                                <div class="navbar-dropdown-menu">
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                    <a class="dropdown-item gray-black-link" href="categories.html">Categories</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="#">accessories</a>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="#">offers</a>
+                        </li>
+                        <li class="nav-item d-lg-inline-block mx-4">
+                            <a class="navbar-link gray-black-link text-capitalize" href="contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-extras d-flex">
+                    <!-- navbar shopping cart -->
+                    <div class="navbar-cart me-4">
+                        <a class="navbar-cart-link black-red-link d-flex align-items-center" href="cart.html">
+                            <i class="fas fa-shopping-bag navbar-cart-icon d-inline-block me-2"></i>
+                            <div class="navbar-cart-text">
+                                Cart
+                                <span class="navbar-cart-qty"> (0)</span>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- navbar hamburger for openning side navigation -->
+                    <button class="navbar-hamburger collapsed d-lg-none" id="navbar-hamburger"
+                        onclick="openSidenav('open')">
+                        <span class="navbar-icon">
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </button>
+                    <!-- navbar search button -->
+                    <button class="search-button d-none d-lg-inline-block black-red-link" id="search-button"
+                        onclick="openSearchBar()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <!-- side navigation -->
+        <nav class="sidenav py-4 text-end" id="sidenav">
+            <div class="container-fluid px-4">
+                <!-- side navigation close button -->
+                <div class="d-block w-100 text-start">
+                    <button class="sidenav-close mb-4" onclick="openSidenav('close')">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <ul class="mx-auto">
+                    <li class="nav-item sidenav-item">
+                        <div class="sidenav-dropdown">
+                            <a class="nav-link sidenav-dropdown-button black-blue-link text-capitalize py-3">home
+                                <i class="fas fa-chevron-down nav-link-icon"></i>
+                            </a>
+                            <div class="sidenav-dropdown-menu">
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">Categories</a>
+                                <a class="dropdown-item black-blue-link py-3" href="product.html">Product</a>
+                                <a class="dropdown-item black-blue-link py-3" href="cart.html">Cart</a>
+                                <a class="dropdown-item black-blue-link py-3" href="checkout.html">Check out</a>
+                                <a class="dropdown-item black-blue-link py-3" href="contact.html">Contact</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <div class="sidenav-dropdown">
+                            <a class="nav-link sidenav-dropdown-button black-blue-link text-capitalize py-3">categories
+                                <i class="fas fa-chevron-down nav-link-icon"></i>
+                            </a>
+                            <div class="sidenav-dropdown-menu">
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                                <a class="dropdown-item black-blue-link py-3" href="categories.html">category</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="#">accessories</a>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="#">offers</a>
+                    </li>
+                    <li class="nav-item sidenav-item">
+                        <a class="nav-link black-blue-link text-capitalize py-3" href="contact.html">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- search panel -->
+        <div class="search-bar" id="search-bar">
+            <div class="container">
+                <div class="row justify-content-end px-2 py-3">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4">
+                        <input class="search-input form-control rounded-1 px-4 py-2" type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <!-- landing section and the carousel -->
+        <section class="landing mb-4">
+            <div class="container">
+                <!-- THE CAROUSEL -->
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <!-- single carousel slide -->
+                            <div class="owl-item">
+                                <img class="img-fluid" src="img/slider_1.webp" alt="">
+                                <div
+                                    class="owl-item-content row px-3 m-0 justify-content-start align-items-start align-items-sm-center">
+                                    <div class="col-12 col-md-10 col-lg-8">
+                                        <h1 class="sublime-title carousel-header mb-1 mb-sm-0">
+                                            A new Online Shop experience.
+                                        </h1>
+                                        <p class="carousel-info my-sm-3 mt-lg-4 mb-lg-5 d-none d-sm-block">Lorem ipsum
+                                            dolor sit
+                                            amet, consectetur
+                                            adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
+                                            viverra velit venenatis fermentum luctus.
+                                        </p>
+                                        <button class="carousel-btn sublime-btn sublime-btn-white mb-3 mb-sm-0">
+                                            <span>Shop Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single carousel slide -->
+                            <div class="owl-item">
+                                <img class="img-fluid" src="img/slider_2.jpg" alt="">
+                                <div
+                                    class="owl-item-content row px-3 m-0 justify-content-start align-items-start align-items-sm-center">
+                                    <div class="col-12 col-md-10 col-lg-8">
+                                        <h1 class="sublime-title carousel-header mb-1 mb-sm-0">
+                                            A new Online Shop experience.
+                                        </h1>
+                                        <p class="carousel-info my-sm-3 mt-lg-4 mb-lg-5 d-none d-sm-block">Lorem ipsum
+                                            dolor sit
+                                            amet, consectetur
+                                            adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
+                                            viverra velit venenatis fermentum luctus.
+                                        </p>
+                                        <button class="carousel-btn sublime-btn sublime-btn-white mb-3 mb-sm-0">
+                                            <span>Shop Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- single carousel slide -->
+                            <div class="owl-item">
+                                <img class="img-fluid" src="img/slider_3.jpg" alt="">
+                                <div
+                                    class="owl-item-content row px-3 m-0 justify-content-start align-items-start align-items-sm-center">
+                                    <div class="col-12 col-md-10 col-lg-8">
+                                        <h1 class="sublime-title carousel-header mb-1 mb-sm-0">
+                                            A new Online Shop experience.
+                                        </h1>
+                                        <p class="carousel-info my-sm-3 mt-lg-4 mb-lg-5 d-none d-sm-block">Lorem ipsum
+                                            dolor sit
+                                            amet, consectetur
+                                            adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed
+                                            viverra velit venenatis fermentum luctus.
+                                        </p>
+                                        <button class="carousel-btn sublime-btn sublime-btn-white mb-3 mb-sm-0">
+                                            <span>Shop Now</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- advertises section -->
+        <section class="advertises" id="advertises">
+            <div class="container">
+                <div class="row">
+                    <!-- small advertise -->
+                    <div class="col-12 col-lg-5 mb-4">
+                        <div class="advertise small-adv position-relative p-4">
+                            <div class="adv-background small-adv-background"></div>
+                            <div
+                                class="adv-content small-adv-content h-100 m-0 d-flex flex-column justify-content-between p-5 px-4 pb-0">
+                                <div class="small-adv-text w-50">
+                                    <h2 class="sublime-title adv-title text-capitalize">smart phones</h2>
+                                    <a class="simple-link" href="categories.html">See More</a>
+                                </div>
+                                <div class="small-adv-discount-container align-self-end position-relative">
+                                    <img src="img/discount.webp" alt="">
+                                    <div class="small-adv-discount-content d-flex flex-column align-items-center">
+                                        <div class="small-adv-discount-title">20<span>%</span></div>
+                                        <p class="small-adv-discount-sub text-capitalize">discount</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- large advertise -->
+                    <div class="col-12 col-lg-7 mb-4">
+                        <div class="advertise large-adv position-relative p-4">
+                            <div class="adv-background large-adv-background "></div>
+                            <div class="adv-content large-adv-content row h-100 m-0 me-md-5 p-5 px-4">
+                                <div class="col-10 large-adv-text">
+                                    <h2 class="sublime-title adv-title text-capitalize">professional cameras</h2>
+                                    <p class="adv-subtitle sublime-subtitle mb-5">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        Nullam a ultricies metus. Sed nec molestie eros. Sed viver ra velit venenatis
+                                        fermentum luctus.</p>
+                                    <a class="simple-link" href="categories.html">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- products section -->
+        <section class="products" id="products">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 my-4">
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-1.webp" alt="iphone-12">
+                            <div class="product-badge badge-blue text-capitalize"><a href="#">new</a></div>
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-2.webp" alt="iphone-12">
+                            <div class="product-badge badge-red text-capitalize"><a href="#">sale</a></div>
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-3.webp" alt="iphone-12">
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-4.webp" alt="iphone-12">
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-5.webp" alt="iphone-12">
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-6.jfif" alt="iphone-12">
+                            <div class="product-badge badge-black text-capitalize"><a href="#">hot</a></div>
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-7.webp" alt="iphone-12">
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                    <!-- single product -->
+                    <div class="col">
+                        <div class="product position-relative my-5">
+                            <img class="img-fluid product-img mb-4" src="img/product-8.webp" alt="iphone-12">
+                            <div class="product-badge badge-red text-capitalize"><a href="#">hot</a></div>
+                            <a class="product-title black-red-link text-capitalize d-inline-block my-2"
+                                href="product.html">Smart Phone</a>
+                            <p class="product-price text-muted">$670</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- amazing product presentation -->
+        <section class="amazing py-4" id="amazing">
+            <div class="container">
+                <div class="amazing-content row p-4 justify-content-end">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="amazing-text text-start py-4 px-5">
+                            <h3 class="amazing-title sublime-title text-capitalize">amazing devices</h3>
+                            <p class="amazing-subtitle sublime-subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.
+                            </p>
+                            <a class="simple-link" href="categories.html">See More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services section -->
+        <section class="services py-4" id="services">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- single service -->
+                    <div class="col-12 col-md-10 col-lg-4 py-5">
+                        <div class="service text-center">
+                            <div class="service-icon d-block">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h6 class="service-title text-capitalize my-3">free shipping worldwide</h6>
+                            <p class="sublime-subtitle service-info text-muted">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam a
+                                ultricies metus. Sed nec molestie.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- single service -->
+                    <div class="col-12 col-md-10 col-lg-4 py-5">
+                        <div class="service text-center">
+                            <div class="service-icon d-block">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <h6 class="service-title text-capitalize my-3">free returns</h6>
+                            <p class="sublime-subtitle service-info text-muted">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam a
+                                ultricies metus. Sed nec molestie.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- single service -->
+                    <div class="col-12 col-md-10 col-lg-4 py-5">
+                        <div class="service text-center">
+                            <div class="service-icon d-block">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h6 class="service-title text-capitalize my-3">24h fast support</h6>
+                            <p class="sublime-subtitle service-info text-muted">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit.
+                                Nullam a
+                                ultricies metus. Sed nec molestie.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="newletter" id="newsletter">
+            <div class="container">
+                <div class="newsletter-border"></div>
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-8 py-5">
+                        <form class="newsletter-form d-flex flex-column align-items-center text-center">
+                            <h2 class="newsletter-title mb-3">Subscribe to our newsletter</h2>
+                            <p class="sublime-subtitle newsletter-info text-muted mb-4">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing
+                                elit. Nullam a
+                                ultricies metus. Sed nec molestie eros
+                            </p>
+                            <input class="subscribe-input text-center d-block w-100 p-2 mb-5 mt-4" type="email">
+                            <button class="sublime-btn sublime-btn-black mt-2"><span>Subscribe</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="footer-overlay"></div>
+    <footer class="footer" id="footer">
+        <div class="footer-background"></div>
+        <div class="container">
+            <div class="row py-4 py-lg-5">
+                <div class="col">
+                    <div
+                        class="footer-content text-center d-flex flex-column justify-content-between align-items-center flex-lg-row">
+                        <a class="footer-logo text-capitalize fw-bolder" href="#" id="footer-logo">sublime.</a>
+                        <p class="footer-copyright sublime-subtitle my-2 m-lg-0">
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made by <a href="https://colorlib.com/">Colorlib</a><br>
+                            and reworked by <a href="https://aminimanesh.com/">Amin</a>
+                        </p>
+                        <ul class="footer-socials d-flex justify-content-between mt-2">
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a class="footer-social mx-3" href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous">
+        </script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
