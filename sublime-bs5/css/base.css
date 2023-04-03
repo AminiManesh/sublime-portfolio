@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+
+:root {
+  --mainBlue: #40ACF1;
+  --transparentBlue: rgba(64, 172, 241, 0.7);
+  --mainWhite: #FFFFFF;
+  --mainBlack: #292F36;
+  --mainDark: rgb(50, 58, 66);
+  --mainGrey: rgb(216, 214, 214);
+  --mainYellow: #e3b505;
+  --gray: #e4e4e4;
+  --textGray: #767676;
+  --textBlack: #1b1b1b;
+  --textBlue: #c3c1cc;
+  --textRed: #e95a5a;
+  --newColor: #6c6a74;
+}
+
+
+/* basic styles */
+
+/* scrollbar styles ------------------------ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--mainBlack);
+  border-radius: 100rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--textRed);
+}
+
+/* end scrollbar styles ------------------------ */
+
+::selection {
+  background: var(--textRed);
+  color: var(--mainWhite);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: var(--mainWhite);
+}
+
+ul {
+  list-style: none;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 16px;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+
+.transition {
+  transition: color 0.3s ease;
+}
+
+.gray-black-link {
+  color: var(--textGray);
+}
+
+.gray-black-link:hover {
+  color: var(--textBlack);
+}
+
+.gray-black-link.active {
+  color: var(--textBlack);
+}
+
+.black-red-link {
+  color: var(--textBlack);
+}
+
+.black-red-link:hover {
+  color: var(--textRed);
+}
+
+.white-red-link {
+  color: var(--mainWhite);
+}
+
+.white-red-link:hover {
+  color: var(--textRed);
+}
+
+.black-blue-link {
+  color: var(--textBlack);
+}
+
+.black-blue-link:hover {
+  color: var(--textBlue);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  transition: color 0.3s ease;
+}
+
+/* projects custom button styles  */
+.sublime-btn {
+  position: relative;
+  background: transparent;
+  padding: 10px 40px;
+  overflow: hidden;
+  z-index: 2;
+  width: auto;
+}
+
+.sublime-btn span {
+  position: relative;
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  font-size: 12px;
+  transition: color 0.3s ease;
+  z-index: 2;
+  user-select: none;
+}
+
+@media screen and (min-width: 768px) {
+  .sublime-btn {
+    padding: 16px 45px;
+  }
+
+  .sublime-btn span {
+    font-size: 16px;
+  }
+}
+
+.sublime-btn-white {
+  border: 2px solid var(--mainWhite);
+}
+
+.sublime-btn-white span {
+  color: var(--mainWhite);
+}
+
+.sublime-btn-black {
+  color: var(--textBlack);
+  border: 2px solid var(--textBlack);
+}
+
+.sublime-btn-black span {
+  color: var(--textBlack);
+}
+
+.sublime-btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -60px;
+  width: 200%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: rotateZ(-45deg);
+  transform-origin: bottom left;
+  z-index: 1;
+}
+
+.sublime-btn-white:after {
+  background: var(--mainWhite);
+}
+
+.sublime-btn-black:after {
+  background: var(--textBlack);
+}
+
+.sublime-btn-white:hover span {
+  color: var(--textBlack);
+}
+
+.sublime-btn-black:hover span {
+  color: var(--mainWhite);
+}
+
+.sublime-btn:hover:after {
+  transform: rotateZ(0deg);
+  opacity: 1;
+}
+
+.simple-link {
+  color: var(--mainWhite);
+  font-weight: 400 !important;
+  font-size: 14px;
+  position: relative;
+}
+
+.simple-link:hover {
+  color: var(--mainWhite);
+}
+
+.simple-link:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: var(--mainWhite);
+  width: 100%;
+  height: 1px;
+  bottom: -1;
+  left: 0;
+}
+
+/* projects custom main titles style */
+.sublime-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 576px) {
+  .sublime-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .sublime-title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sublime-title {
+    font-size: 52px;
+  }
+}
+
+/* projects custom main input styles */
+.subscribe-input {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #787878;
+}
+
+/* projects custom main subtitle styles */
+.sublime-subtitle {
+  line-height: normal;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 576px) {
+  .sublime-subtitle {
+    font-size: 14px;
+    line-height: 2.14;
+  }
+}
+
+.sublime-numeric {
+  display: flex;
+  align-items: center;
+  width: 147px;
+  height: 60px;
+  border: 2px solid #d0d0d0;
+  padding-left: 20px;
+  user-select: none;
+}
+
+.numeric-label {
+  color: var(--newColor);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.numeric-number {
+  border: none;
+  outline: none;
+  width: 30px;
+  color: var(--textBlack);
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  margin-left: auto;
+  padding-left: 9px;
+  height: 100%;
+  display: block;
+}
+
+.numeric-up-down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0px 2px 0px 3px;
+}
+
+.numeric-up {
+  display: flex;
+  align-items: flex-end;
+  height: 50%;
+}
+
+.numeric-down {
+  display: flex;
+  align-items: flex-start;
+  height: 50%;
+}
+
+.numeric-button {
+  cursor: pointer;
+  padding: 0 10px;
+  border: solid 1px transparent;
+}
+
+.numeric-button * {
+  font-size: 10px;
+  color: #232323;
+}
+
+.sublime-radio {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  user-select: none;
+}
+
+.sublime-radio input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sublime-radio .checkmark {
+  width: 11px;
+  height: 11px;
+  border: 2px solid #9f9f9f;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.sublime-radio .label {
+  margin: 0;
+  margin-left: 25px;
+}
+
+.sublime-radio:hover .checkmark {
+  background-color: var(--textRed);
+}
+
+.sublime-radio input:checked~.checkmark {
+  background-color: var(--textRed) !important;
+  border-color: var(--textRed);
+}
+
+.section-title {
+  font-weight: 600 !important;
+  margin-bottom: 5px;
+}
+
+.sublime-input-text,
+.sublime-textarea {
+  background-color: #f2f4f8;
+  border: none;
+  border-radius: 0px;
+  font-size: 14px;
+  color: #000000;
+  padding: 16px;
+}
+
+.sublime-input-text:focus,
+.sublime-textarea:focus {
+  background-color: #f2f4f8;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: #000000;
+}
+
+
+.sublime-checkbox {
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  width: fit-content;
+}
+
+.sublime-checkbox input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.sublime-checkbox .checkmark {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  background-color: #f2f4f8;
+  transition: all 0.3s ease;
+}
+
+.sublime-checkbox .checkmark img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sublime-checkbox .label {
+  margin: 0;
+  margin-left: 15px;
+  color: #a5a5a5;
+}
+
+.sublime-checkbox .checkmark>img {
+ visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.sublime-checkbox input:checked~.checkmark>img {
+  visibility: visible;
+  opacity: 1;
+}

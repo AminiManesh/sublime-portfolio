@@ -1,0 +1,133 @@
+@import url('base.css');
+
+/* ----- main section styles ----- */
+
+/* carousel styles */
+.owl-carousel {
+  position: relative;
+}
+
+.owl-carousel .owl-item img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.owl-item-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  color: white;
+}
+
+.owl-dots {
+  position: absolute;
+  display: flex;
+  bottom: 4%;
+  left: 4%;
+}
+
+.owl-dot {
+  color: var(--mainWhite) !important;
+  font-weight: 600 !important;
+  margin: 0 2px;
+  transition: color 0.3s ease;
+}
+
+.owl-dot:hover,
+.owl-dot.active {
+  color: var(--textRed) !important;
+}
+
+/* advertises setction styles */
+.advertise {
+  position: relative;
+  height: 490px;
+  min-height: 490px;
+}
+
+.adv-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.adv-content {
+  position: relative;
+}
+
+.adv-title {
+  color: var(--mainWhite);
+}
+
+.adv-subtitle {
+  color: var(--mainWhite);
+}
+
+/* small advertise styles */
+.small-adv-background {
+  background: url('../img/small-adv.webp');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.small-adv-content {
+  border: 2px solid var(--mainWhite);
+}
+
+
+.small-adv-discount-content {
+  position: absolute;
+  top: 85px;
+  left: 68px;
+}
+
+
+.small-adv-discount-title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--textBlack);
+  margin-bottom: -20px;
+}
+
+.small-adv-discount-title>span {
+  font-size: 2.4rem;
+  vertical-align: super;
+}
+
+/* large advertise styles */
+
+.large-adv-background {
+  background: url('../img/large-adv.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.large-adv-content {
+  background: rgba(0, 0, 0, 0.63);
+}
+
+/* amazing section styles */
+
+.amazing-content {
+  background: url('../img/amazing-background.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.amazing-text {
+  background: var(--textRed);
+  color: var(--mainWhite);
+}
+
+.amazing-text *::selection {
+  background: var(--mainWhite);
+  color: var(--textRed);
+}
